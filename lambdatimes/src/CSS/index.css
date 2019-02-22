@@ -314,3 +314,44 @@ body {
   width: 100%;
   display: none;
 }
+
+.loginDiv {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.loginForm {
+  padding: 15px;
+
+}
+
+.loginButton {
+  margin: 10px;
+  padding: 10px;
+  background: black;
+  font-size: 20px;
+  width: 150px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor:pointer;
+  border: none;
+  
+  
+}
+
+.loginButton:hover {
+  color: black;
+  background: white;
+}
+
+.loginInput {
+  width: 220px;
+  height: 50px;
+  font-size: 20px;  
+  border: none;
+  color: black;
+
+}

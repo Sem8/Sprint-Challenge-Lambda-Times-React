@@ -21,15 +21,16 @@ class LoginPage extends Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.submitHandler}>
+            <div className='loginDiv'>
+                <form onSubmit={this.submitHandler} className='loginForm'>
                     <input
-                    placeholder='Type in Username'
+                    placeholder='Type in Username...'
                     value={this.state.loginText}
                     onChange={this.changeHandler}
+                    className='loginInput'
                      />
                 </form>
-                <button onClick={this.submitHandler}>Log In</button>
+                <button onClick={this.submitHandler} className='loginButton'>Log In</button>
             </div>
         )
     }
