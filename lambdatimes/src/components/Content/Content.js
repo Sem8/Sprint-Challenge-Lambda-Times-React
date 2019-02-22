@@ -6,6 +6,7 @@ import Cards from './Cards';
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from '../../data';
 
+
 export default class Content extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +14,7 @@ export default class Content extends Component {
       selected: 'all',
       tabs: [],
       cards: []
+      
     };
   }
 
@@ -43,10 +45,12 @@ export default class Content extends Component {
           of the items from cardData. 
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
-   return this.state.cards.filter(eachSelectedCard => eachSelectedCard.tab.includes(this.state.selected))
+   if (this.state.selected === 'all') {
+     return this.state.cards;
+   }
+   return this.state.cards.filter(eachSelectedCard => eachSelectedCard.tab.includes(this.state.selected));  
 
-    // return this.state.cards;
-  };
+   }  
 
   render() {
     return (
@@ -58,7 +62,17 @@ export default class Content extends Component {
         */}
         <Tabs tabs={this.state.tabs} selectedTab={this.state.selected} selectTabHandler={this.changeSelected} />
         <Cards cards={this.filterCards()} />
+        {/* {this.state.filteredCards.length > 0 ? this.state.filteredCards.map((eachFilteredCard, index) =>(
+              <Cards key={index} cards={eachFilteredCard} />
+            )) : <Cards cards={this.filterCards()} /> } */}
       </div>
     );
   }
 }
+
+
+
+
+
+
+
