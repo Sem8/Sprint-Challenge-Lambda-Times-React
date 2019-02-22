@@ -1,0 +1,24 @@
+1. What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+1 answer: PropTypes ensure that the right type of props is passed to a component — and, conversely, that the receiving 
+component is receiving the right type of props. Type checking is important so that the correct data gets passed around 
+and the wrong data is not rendered on the browser. 
+
+
+2. Describe a life-cycle event in React?  
+
+2 answer: Mounting is when a component is initialized and gets added to the DOM also called Birth phase. Here render method is invoked and componentDidMount gets called. 
+Updating phase is when setState mehtod can be used to show a changed version of the data from state onto the user interface, it's also called growth phase.  
+Unmounting is when a component is removed from the DOM and remove any event listeners you set up in the DOM and componentWillUnmount method is called for cleanup. 
+It's also called death phase.  
+
+
+3. Explain the details of a Higher Order Component?
+
+3 answer: Higher order components in React js is a component that takes in another component as an argument and returns a new component. 
+The component it returns can render the original component that was passed in
+
+
+4. What are three different ways to style components in React? Explain some of the benefits of each.
+ 
+4 answer: React components can be styled with CSS, with styled-components or with ReactStrap.  
