@@ -11,6 +11,7 @@ const Cards = props => {
             <Card eachCardDisplay={eachCard}/>
             </div>
           ))}
+          {/* {props.cards} */}
     </div>
   )
 }
