@@ -52,7 +52,7 @@ body {
   color: #333;
   font-family: 'PT Sans', sans-serif;
 }
-.top-bar {
+/* .top-bar {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -97,8 +97,8 @@ body {
   flex-direction: row;
   flex: 3;
   font-size: 9px;
-}
-.top-bar .container .container-center span {
+} */
+/* .top-bar .container .container-center span {
   cursor: pointer;
   margin-right: 5%;
 }
@@ -119,8 +119,8 @@ body {
 }
 .top-bar .container .container-right span {
   cursor: pointer;
-}
-.header {
+} */
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,7 +159,7 @@ body {
   text-align: right;
   margin-right: 25px;
   flex: 1;
-}
+} */
 .content-container {
   display: flex; 
   flex-direction: column; 
@@ -313,4 +313,45 @@ body {
 .carousel img {
   width: 100%;
   display: none;
+}
+
+.loginDiv {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.loginForm {
+  padding: 15px;
+
+}
+
+.loginButton {
+  margin: 10px;
+  padding: 10px;
+  background: black;
+  font-size: 20px;
+  width: 150px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor:pointer;
+  border: none;
+  
+  
+}
+
+.loginButton:hover {
+  color: black;
+  background: white;
+}
+
+.loginInput {
+  width: 220px;
+  height: 50px;
+  font-size: 20px;  
+  border: none;
+  color: black;
+
 }
